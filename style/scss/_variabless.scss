@@ -187,6 +187,7 @@ a{
 #balkon{
 	height: auto;
 	width: 100%;
+	background-size: cover;
 	background-image: url("../../img/bg_3.png");
 	animation: balkon 10s linear forwards;
 	
@@ -202,5 +203,11 @@ a{
 	
 	
 }
+.fly_car{
+	position: absolute;
+    bottom: -399px;
+    left: -151px;
+}
+
 
 

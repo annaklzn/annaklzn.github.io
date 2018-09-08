@@ -85,6 +85,8 @@ a {
 #balkon {
   height: auto;
   width: 100%;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-image: url("../../img/bg_3.png");
   -webkit-animation: balkon 10s linear forwards;
           animation: balkon 10s linear forwards; }
@@ -97,6 +99,11 @@ a {
           background-size: cover;
   -webkit-animation: animatedBackground 13.0s linear forwards;
           animation: animatedBackground 13.0s linear forwards; }
+
+.fly_car {
+  position: absolute;
+  bottom: -399px;
+  left: -151px; }
 
 @font-face {
   font-family: 'Roboto';
@@ -161,10 +168,6 @@ a {
   font-style: normal;
   font-stretch: normal;
   unicode-range: U+0020-00D8; }
-
-.fly_car {
-  position: absolute;
-  bottom: 0; }
 
 .header {
   background-color: #000000; }
