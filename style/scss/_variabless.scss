@@ -1,0 +1,206 @@
+$orange: #f3a10d;
+$white: #ffffff;
+$black: #000000;
+
+
+
+%textUp{
+	text-transform: uppercase;
+} 
+
+.orange{
+	color: orange;
+}
+
+	
+
+//Media 
+@mixin xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: 576px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (min-width: 320px) and (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin marginLR($marginL, $marginR) {
+ 	margin-left: $marginL;
+ 	margin-right: $marginR;
+ }
+
+ @mixin marginTB($marginT, $marginB) {
+ 	margin-top: $marginT;
+ 	margin-bottom: $marginB;
+ }
+
+ @mixin paddingLR($paddingL, $paddingR) {
+ 	padding-left: $paddingL;
+ 	padding-right: $paddingR;
+ } 
+
+ @mixin paddingTB($paddingT, $paddingB) {
+ 	padding-top: $paddingT;
+ 	padding-bottom: $paddingB;
+ } 
+
+//fonts
+%USHText {
+	font-family: 'Uni Sans Heavy Caps', sans-serif;
+	font-weight: 900;
+}
+%RobotoBText{
+	font-family: 'RobotoB', sans-serif;
+	font-weight: 700;
+}
+%RobotoText{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+%PTSansText{
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+}
+%PTSansBText{
+	font-family: 'PT Sans B', sans-serif;
+	font-weight: 700;
+}
+%OTexl{
+	font-family: 'O', sans-serif;
+	font-weight: 400;
+}
+%OTexl{
+	font-family: 'O L', sans-serif;
+	font-weight: 300;
+}
+%FAText{
+	font-family: 'FontAwesome', sans-serif;
+	font-weight: 400;
+}
+@mixin hexagonBase( $hexagonWidth){
+	position: relative;
+	width: $hexagonWidth; 
+	height: calc($hexagonWidth/1.731);
+	background-color: $orange;
+	margin: 115.47px 0;
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			width: 0;
+			border-left: calc($hexagonWidth/2) solid transparent;
+			border-right: calc($hexagonWidth/2) solid transparent;
+			margin-left: -50%;
+			}
+
+		&:before {
+			bottom: 100%;
+			border-bottom: 115.47px solid #000000ab;
+		}
+
+		&:after {
+		  top: 100%;
+		  margin-left: -60%;
+		  border-top: 115.47px solid #000000ab;
+		}
+}
+
+//General styles
+html{
+	font-size: 16px;
+}
+.container {
+	@include xl{
+		width: 1264px;
+	}
+}
+
+a{
+	color: $white;
+	&:hover{
+		color: $orange;
+	}
+}
+
+
+@keyframes animatedBackground {
+    0 {
+        background-position: -250px -200px
+    }
+    100% {
+        background-position: 0px -60px
+    }
+}
+@keyframes balkon {
+
+    0 {
+    	background-size: 104%
+    }
+	25% {
+		background-size: 103%
+	}
+	50% {
+		background-size: 102%
+	}
+	75%{
+		background-size: 101%
+	}
+    100% {
+        background-size: 100%
+    }
+
+}
+@keyframes Ball{
+    0 {
+        background-position: 100px 106px
+    }
+    50%{
+		background-position: 100px 40px
+    }
+    100% {
+        background-position: 100px 106px
+    }
+}
+
+
+#balkon{
+	height: auto;
+	width: 100%;
+	background-image: url("../../img/bg_3.png");
+	animation: balkon 10s linear forwards;
+	
+
+}
+
+#earth{
+	height: auto;
+	width:100%;
+	background-image: url("../../img/space.jpg");
+	background-size: cover;
+	animation: animatedBackground 13.0s linear forwards;
+	
+	
+}
+
+
