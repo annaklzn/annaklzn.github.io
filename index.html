@@ -10,9 +10,9 @@
 	<link rel="stylesheet" href="style/css/style.css">
 </head>
 <body>
-	<section id="earth">
+		<div class="earth_1"><img src="img/space.jpg" id="earth_1_img"></div>
 		<div id="balkon">
-			<header class="header">
+			<header id="header" class="header d-none">
 				<div class="container">
 					<div class="row header_cont">
 						<div class="logo_container offset-1">
@@ -20,17 +20,67 @@
 								<img src="img/logo.png" alt="logo" class="">
 							</a>
 						</div>
-
 						<nav class="nav offset-1 navbar navbar-expand-lg">
 							<div class="navbar-toggler hamburger hamburger_icon"  data-toggle="collapse" data-target="#menu">
 								<img src="img/menu_icon.png" alt="menu">
 							</div>
 							<div class="collapse navbar-collapse" id="menu">
-								<a href="#" class="nav_item">About</a>
-								<a href="#" class="nav_item">Solutions</a>
-								<a href="#" class="nav_item">Products</a>
-								<a href="#" class="nav_item">Partners</a>
-								<a href="#" class="nav_item">Contacts</a>
+
+								<a href="#" class="nav_item ni1">
+									<div class="nav_item_hover opacity">
+										<div class="orangehex">
+											<img src="img/hex2.png" alt="">
+										</div>
+										<div class="orangehex_min">
+											<img src="img/hex3.png" alt="">
+										</div>
+									</div>
+									About
+								</a>
+								<a href="#" class="nav_item ni2">
+									<div class="nav_item_hover">
+										<div class="orangehex">
+											<img src="img/hex2.png" alt="">
+										</div>
+										<div class="orangehex_min">
+											<img src="img/hex3.png" alt="">
+										</div>
+									</div>
+									Solutions
+								</a>
+								<a href="#" class="nav_item ni3">
+									<div class="nav_item_hover">
+										<div class="orangehex">
+											<img src="img/hex2.png" alt="">
+										</div>
+										<div class="orangehex_min">
+											<img src="img/hex3.png" alt="">
+										</div>
+									</div>
+									Products
+								</a>
+								<a href="#" class="nav_item ni4">
+									<div class="nav_item_hover">
+										<div class="orangehex">
+											<img src="img/hex2.png" alt="">
+										</div>
+										<div class="orangehex_min">
+											<img src="img/hex3.png" alt="">
+										</div>
+									</div>
+									Partners
+								</a>
+								<a href="#" class="nav_item ni5">
+									<div class="nav_item_hover">
+										<div class="orangehex">
+											<img src="img/hex2.png" alt="">
+										</div>
+										<div class="orangehex_min">
+											<img src="img/hex3.png" alt="">
+										</div>
+									</div>
+									Contacts
+								</a>
 							</div>
 						</nav>
 						<select class="selectpicker head_select offset-1 d-none d-lg-block" data-width="fit">
@@ -40,34 +90,41 @@
 					</div>
 				</div>
 			</header>
-			<div class="fly_car"><img src="img/bg_2.png" alt="" class="animated slideInLeft slower"></div>
+			<div id="fly_car">
+				<img src="img/bg_2.png" alt="" id="fly_car_img" class="d-none">
+			</div>
 			<section class="main_sect" id="main_sect">
 				<div class="container-fluid">
 					<div class="container main_sect_container">
 						<div class="row">
-							<ul class="ball_con">
-								<li><img src="img/ball_01.png" alt="" class="ball_1 ball animated bounce fast"></li>
+							<ul id="ball_con" class="ball_con">
+								<li><img src="img/ball_01.png" alt="" class="ball_1 ball"></li>
 								<li><img src="img/ball_02.png" alt="" class="ball_2 ball animated bounce faster"></li>
 								<li><img src="img/ball_03.png" alt="" class="ball_3 ball animated bounce"></li>
 								<li><img src="img/ball_04.png" alt="" class="ball_4 ball animated bounce"></li>
 								<li><img src="img/ball_05.png" alt="" class="ball_5 ball animated bounce slow"></li>
 							</ul>
-							<h3 class="main_tittle animated slideInRight delay-12s offset-1"><span class="orange">Investing</span> in saccess</h3>
-							<div class="hexagon info_about offset-2">
+							<h3 id="main_tittle" class="main_tittle d-none offset-1"><span class="orange">Investing</span> in saccess</h3>
+							<div id="mInfo" class="hexagon info_about offset-2">
 								<h2 class="info_tittle">About</h2>
-								<p>
-									A privately owned company established in 1999, governed by UK laws
-								</p>
-								<p>
-									800 employees worldwide: 
-									300 bookmakers, 260 it specialists, 
-								</p>
+								<div class="info_about_text">
+									<p>
+										A privately owned company established in 1999, governed by UK laws.We help I-Gaming operators to invest in their success by providing full circle of betting products and services.
+									</p>
+									<p>
+										Over 800 employees among which there are 300 professional bookmakers, 150 IT-professionals.
+									</p>
+									<p>
+										We strive to provide risk-free solutions for our clients with the focus on local market needs. Our unique blend of technology with intelligence ensures predictable results. 
+									</p>
+								</div>
+								
 								<div class="info_btn">
 									<a href="#" class="learn_m">Lern<br>More</a>
 								</div>
 								
 							</div>
-							<div class="main_nav animated bounceInRight delay-12000s slower">
+							<div id="main_nav" class="main_nav d-none">
 								<ul class="main_nav_list">
 									<li class="main_nav_item" id="nav_about">
 										<a href="#">
@@ -114,17 +171,16 @@
 								</ul>
 							</div>
 
-							<div class="scroll_down text-center animate faideInUp infinite">
+							<div id="scroll_down" class="d-none scroll_down text-center animate faideInUp infinite">
 								<a href="#" class="d-none d-lg-block">
 									<img src="img/icon-scroll.png" alt="scroll" class="animated bounce infinite">
 									<p>scroll down</p>
 								</a>
 								<a href="#" class="d-lg-none d-md-block">
-									<img src="img/icon-scroll2.png" alt="scroll class=""
-
+									<img src="img/icon-scroll2.png" alt="scroll class=">
 								</a>
 							</div>
-							<div class="join_us">
+							<div id="join" class="join_us d-none">
 								<a href="#">Join Us <img src="img/join_icon.png" alt="join Us"></a>
 							</div>
 						</div>
@@ -132,10 +188,10 @@
 				</div>		
 			</section>
 		</div>
+
 	
-	</section>
-	
-	<section class="two_sect" id="two_sect">
+	<section class="sect_two" id="sect_two">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam maiores consequatur quae rerum explicabo culpa, aspernatur ut eaque harum doloribus, quo nihil possimus vel ducimus quisquam nostrum cupiditate? Neque magni, vitae quos quasi rerum id aspernatur vel incidunt pariatur veritatis ad deserunt repellendus delectus vero atque repellat ab? Repellendus culpa earum ea, dolorem molestiae quaerat nemo nihil! Expedita libero cupiditate rerum culpa distinctio dolor sit eum amet, dolores nulla ipsum magni similique obcaecati, possimus, voluptates esse placeat voluptatibus accusantium consequatur, facere odio et dicta officiis sint. Pariatur asperiores quibusdam voluptas ex numquam, velit labore alias aliquam et, explicabo odit minus assumenda debitis laboriosam laborum culpa unde, cumque quae. Minima blanditiis consequatur officia quasi. Dolore ipsa aliquam asperiores eum mollitia ad vitae quisquam dolorum fugit accusamus facilis, culpa adipisci porro molestiae corporis cum voluptatum, repellat quaerat praesentium pariatur, ipsum nemo. Quasi excepturi illo quo impedit assumenda vero, totam quibusdam dolor in necessitatibus ipsam quidem eligendi, praesentium similique quia, sunt amet. Perspiciatis laudantium possimus, nam eaque reiciendis consequuntur? Aliquid amet eveniet dicta, deleniti, quia quo sint voluptatem veritatis at dolorum eligendi nemo impedit molestiae facere dignissimos voluptate commodi fuga, consequatur suscipit qui? Soluta quisquam magnam dolorem ullam quibusdam sequi eaque, repellendus voluptas dolor eius, repudiandae qui veritatis, culpa deserunt eum ex itaque ratione! Tempore aperiam quaerat, sint quidem omnis porro vero quis perspiciatis temporibus distinctio voluptatibus voluptatum neque consectetur quas suscipit eveniet, laudantium totam veritatis. Nam sit reprehenderit facilis iure voluptas, suscipit minima quis recusandae omnis, obcaecati consequuntur ipsa repellendus accusantium nemo quos eos blanditiis cupiditate. Et reiciendis totam sequi soluta amet nostrum blanditiis inventore ipsum deserunt vel ratione enim expedita, ut, perspiciatis fugiat, ipsa. Sunt placeat aperiam corrupti, veritatis quis magni recusandae harum corporis vitae ea asperiores, eos suscipit ratione, eius mollitia doloribus ullam possimus. Sit minima enim voluptas quaerat, voluptates quo. Iure quidem, iusto quibusdam fugit voluptates quasi at eligendi quaerat atque, voluptas neque provident incidunt nihil mollitia ipsa accusamus vitae dolores. Est provident, cumque iste officiis architecto eum natus repellendus eius perspiciatis, illo ducimus, fuga. Dolor ex ipsum eius dolore sequi, eveniet ipsam facilis. Libero fugit unde numquam voluptas alias, ratione soluta. Suscipit error magni delectus, adipisci, tenetur aspernatur. Excepturi sunt qui accusamus, enim explicabo asperiores repellendus voluptates at. Quibusdam consequatur expedita asperiores dignissimos alias quasi veritatis accusamus nostrum, sed aliquid iusto quis, delectus nobis autem consequuntur modi culpa odio maxime deleniti neque minus non. Eos, corrupti, quasi. Sapiente delectus suscipit fuga omnis in pariatur, dolores quasi. Dolore odio suscipit consectetur nam consequuntur totam minus iure voluptatem cumque harum dolores omnis, blanditiis a, non culpa fugit ipsa. Eius culpa sit, placeat numquam blanditiis doloremque quaerat! Nulla, quasi. Sapiente similique, dolorum suscipit ducimus sequi dicta odio quidem officia possimus error laborum ab quo adipisci vero consequuntur alias molestias vitae, assumenda magni eius! Numquam soluta earum saepe nisi atque deleniti recusandae vitae sapiente eius natus delectus maiores officia libero repellendus, ipsum corporis temporibus explicabo dolor asperiores aperiam minima ipsa, veniam quasi? Delectus nulla earum inventore accusantium tenetur qui eaque molestiae doloremque similique officia numquam culpa quos laborum est ratione quo, blanditiis, quod incidunt! Quidem id ipsum amet ut quia corporis ipsam nihil sed sapiente, sit ipsa nulla doloribus neque veniam hic consequuntur. Architecto esse officiis eum labore voluptates, adipisci molestiae totam atque sed officia ab voluptate doloribus quasi suscipit asperiores nulla assumenda hic! Sequi, porro officia? Sapiente distinctio maxime, cum alias eveniet odio! Soluta ipsam dolores et necessitatibus amet blanditiis possimus iure cupiditate, ducimus ad eveniet libero, magnam repudiandae consequatur numquam quod eum repellendus! Pariatur velit fuga saepe delectus qui reprehenderit itaque labore consequatur tempore amet consequuntur, laboriosam vitae maiores, ullam vel voluptas excepturi est recusandae repellat eius beatae eaque atque similique. Ea repudiandae culpa explicabo obcaecati hic, laboriosam dolore voluptatibus debitis harum aspernatur iusto sed tenetur commodi, vitae aliquam quae ratione saepe quam in ipsam maiores? Possimus ab quas impedit pariatur maiores natus quibusdam sed consequuntur repellat temporibus dignissimos veniam, autem ipsam cumque nisi sequi incidunt hic recusandae laboriosam magnam officia deleniti doloribus sunt laudantium. Minima tenetur saepe, sunt assumenda. Quas, pariatur sapiente repudiandae nesciunt impedit molestiae fugiat corporis laudantium, cum eaque nemo quia sint iusto possimus perferendis nisi facilis officiis quam! Aspernatur nostrum provident rerum quisquam reiciendis tempore. Porro magni illum quod adipisci, assumenda non, soluta neque, officia accusantium ab enim eligendi. Quam ipsa voluptates vitae cum, accusamus facere eveniet perferendis, dolores alias perspiciatis necessitatibus, ipsam aut! Repudiandae blanditiis officia minima corporis ratione doloremque eligendi deleniti aut, iusto sit minus ipsa quod, tempora perferendis soluta alias rem consequuntur accusantium, culpa maiores impedit perspiciatis fuga consectetur! Officia, vitae. Corrupti, dicta voluptas provident commodi modi ipsam, laborum fuga, blanditiis consectetur ad ducimus, maxime eaque eveniet! At ratione repellendus architecto repudiandae veniam eaque corrupti debitis maiores iste, sapiente cum officia, tempora consequuntur quibusdam omnis hic voluptatem asperiores obcaecati eveniet, adipisci quasi velit quia excepturi molestias sit. Suscipit amet aspernatur doloribus impedit ipsam quo iure maiores nisi, exercitationem quasi repellendus tenetur perspiciatis magnam magni veritatis consectetur facilis, omnis dolores id mollitia animi! Mollitia nobis ullam, id ipsam tempora voluptatem repellendus cupiditate autem sapiente est enim ea quos eius expedita voluptatum, aliquid dolorum nam nihil eveniet provident magnam. Ipsum deleniti sed reprehenderit repudiandae ab voluptas, numquam facere rerum. Deleniti molestias architecto voluptatum quibusdam dolore voluptatibus, maiores quisquam, aliquam explicabo sapiente ab odit totam officia facilis consequuntur numquam suscipit nemo, expedita dolor dolores corporis! Esse, neque inventore asperiores dolorum quae ut nobis laudantium ullam adipisci totam vel, et voluptas facere reprehenderit atque veniam expedita. Rem atque perferendis, quam mollitia illum necessitatibus aut vero obcaecati recusandae, nemo assumenda fuga, sint saepe tempore doloremque tenetur facilis. Nihil, ullam itaque impedit inventore quaerat qui soluta voluptatem praesentium sed, provident laudantium, atque laborum, aut sunt quo perspiciatis aspernatur. Molestiae laudantium, nesciunt quidem dignissimos, accusamus nisi modi sit culpa atque facilis expedita. Porro velit adipisci ex at sed, pariatur similique excepturi ut. Saepe odio dolorem ut, totam vitae labore consequuntur deleniti deserunt, qui commodi cumque. Facere magni similique fuga labore excepturi, in impedit repellat nesciunt, laudantium, molestiae consequuntur consequatur!
 	</section>
 	
 

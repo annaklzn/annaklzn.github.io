@@ -1,3 +1,4 @@
+
 .header{
 
 	background-color: $black;
@@ -18,6 +19,7 @@
 		.hamburder_icon{
 			position: absolute; 	
 		}
+
 		.nav_item{
 			z-index: 1;
 			display: inline-block;
@@ -25,15 +27,32 @@
 			color: $white;
 			font-size: 1.125em;
 			@include marginLR(0px, 25px);
+			.nav_item_hover{
+				position: absolute;
+				padding: 10px;
+				opacity: 0;
+				transform: translate(-16%, -41%);
+				
+				.orangehex{
+					position: relative;
+				}
+				.orangehex_min{
+					position: absolute;
+					transform: translate(15%, -189%);
+				}
+			}
 			&:hover{
 				color: $orange;
+				
 			}
+
 		}
+/*
 		.nav_item:before{
 			content: "";
 			opacity: 0;
 			top: -48px;
-    		left: -43px;	
+    		left: -10px;	
 			position: absolute;
 			width: 200px;
 			height: 200px;
@@ -43,12 +62,13 @@
 			content: "";
 			opacity: 0;
 			top: -36px;
-    		left: -4px;
+    		left: 2px;
 			position: absolute;
 			width: 200px;
 			height: 200px;
 			background: url("../../img/hex3.png") no-repeat;
 		}
+*/
 	}
 	.head_select{
 		display: flex;
@@ -92,7 +112,7 @@
 	}
 	.main_sect_container{
 		.ball_con{
-			margin-top: 101px;
+			margin-top: 105px;
 			background: transparent;
 			display: flex;
     		align-items: flex-end;
@@ -124,7 +144,8 @@
 		@extend %USHText;
 		color: $white;
 		.main_tittle{
-			margin-top: 160px;
+			margin-top: 156px;
+   			margin-left: 76px;
 			font-size: 1.612em;
 		}
 		.hexagon{
@@ -166,9 +187,9 @@
 		}
 
 		.info_about{
-			margin-left: 105px;
-			margin-bottom: 146px;
-    		margin-top: 172px;
+			margin-left: 93px;
+   			margin-bottom: 188px;
+    		margin-top: 108px;
 			@include paddingLR(66px, 66px);
 			font-size: 0.875em;
 			text-align: center;
@@ -177,13 +198,21 @@
 			.info_tittle{
 				margin-bottom: 45px;
 				font-size: 1.875em;
+				animation-delay: 10s;
 			}
+			.info_about_text{
+				height: 140px;
+				overflow-x: hidden;
+    			overflow-y: scroll;
+
+			}
+			.info_about_text::-webkit-scrollbar {width:0px;}
 		}
 
 		.info_btn{
 				width: 146px;
     			height: 125px;
-    			margin: 29px 79px;
+    			margin: 10px 79px;
 				display: flex;
     			align-items: center;
     			justify-content: center;
@@ -199,42 +228,6 @@
   				color: $white;
   				}
   			}
-  /*
-		.orangehex{
-			margin-top: 57px;
-			display: inline-block;
-			position: relative;
-  			width: 104px; 
-  			height: 60.04px;
-  			background-color: #f3a10dab;
-  			margin: 30.02px 0;
-  			z-index: 10;
-  			margin-top: 12px;
-  			
-  			}
-		.orangehex:before,
-		.orangehex:after {
-			  content: "";
-			  position: absolute;
-			  width: 0;
-			  border-left: 52px solid transparent;
-			  border-right: 52px solid transparent;
-			  margin-left: -50%;
-			}
-
-		.orangehex:before {
-		  bottom: 100%;
-		  border-bottom: 30.02px solid #f3a10dab;
-		  margin-left: -50%;
-		}
-
-		.orangehex:after {
-		  top: 100%;
-		  width: 0;
-		  border-top: 30.02px solid #f3a10dab;
-		  margin-left: -50%;
-		}
-*/
 
 		.scroll_down{
 			position: absolute;
@@ -247,8 +240,8 @@
 		}
 		.main_nav{ 
 			position: absolute;
-			top: 44%;
-			right: 10px;
+    		top: 39%;
+    		right: 8%;
 			.main_nav_list{
 				list-style: none;
 				display: flex;
@@ -281,8 +274,8 @@
 
 		.join_us{
 			position: absolute;
-    		bottom: 10px;
-    		right: 0;
+    		bottom: 4%;
+    		right: 8%;
 		}
 	}
 }
